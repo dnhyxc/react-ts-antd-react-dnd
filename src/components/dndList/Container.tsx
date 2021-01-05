@@ -5,7 +5,7 @@
 
 import React, { useState } from 'react';
 import Box from './Box';
-import IListData from '../interface/ListData';
+import IListData from '../../interface/ListData';
 import List from './List';
 
 const boxs: IListData[] = [

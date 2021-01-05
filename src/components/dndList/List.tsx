@@ -6,8 +6,8 @@
 import update from 'immutability-helper';
 import React, { CSSProperties, useCallback } from 'react';
 import { useDrop } from 'react-dnd';
-import IListData from '../interface/ListData';
-import ItemTypes from '../ItemTypes';
+import IListData from '../../interface/ListData';
+import ItemTypes from '../../ItemTypes';
 import Card from './Card';
 
 const style: CSSProperties = {

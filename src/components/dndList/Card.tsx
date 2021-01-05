@@ -6,8 +6,8 @@
 import React, { useRef, useMemo } from 'react';
 import { XYCoord } from 'dnd-core';
 import { DragSourceMonitor, DropTargetMonitor, useDrag, useDrop } from 'react-dnd';
-import ItemTypes from '../ItemTypes';
-import IListData from '../interface/ListData';
+import ItemTypes from '../../ItemTypes';
+import IListData from '../../interface/ListData';
 
 // import OrderListSvg from '../assets/order-list.png';
 

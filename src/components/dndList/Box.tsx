@@ -5,8 +5,8 @@
 
 import React from 'react';
 import { DragSourceMonitor, useDrag } from 'react-dnd';
-import IListData from '../interface/ListData';
-import ItemType from '../ItemTypes';
+import IListData from '../../interface/ListData';
+import ItemType from '../../ItemTypes';
 import { IListProps } from './List';
 
 let id = 1;

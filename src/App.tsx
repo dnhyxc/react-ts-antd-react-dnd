@@ -1,6 +1,6 @@
 
 import React from 'react';
-import Container from './components/Container';
+import Container from './components/dndList/Container';
 import './App.css';
 
 const App: React.FC = () => {
