@@ -7,7 +7,7 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
-  <DndProvider backend={HTML5Backend as any}>
+  <DndProvider backend={HTML5Backend}>
     <App />
   </DndProvider>,
   document.getElementById('root')
