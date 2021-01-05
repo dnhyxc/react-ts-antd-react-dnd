@@ -42,8 +42,11 @@ const Card: React.FC<IListData & IProps> = ({ bg, category, index, moveCard, id 
             if (!ref.current) {
                 return;
             }
+
             const dragIndex = item.index;
+            console.log(dragIndex, 'dragIndex')
             const hoverIndex = index;
+            console.log(hoverIndex, 'hoverIndex')
 
             // 拖拽元素下标与鼠标悬浮元素下标一致时，不进行操作
             if (dragIndex === hoverIndex) {

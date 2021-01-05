@@ -31,14 +31,19 @@ const Box: React.FC<IListData & IListProps> = ({ bg, category, cardList, changeC
     item: box,
     begin(monitor: DragSourceMonitor) {
       const useless = cardList.find((item: IListData) => item.id === -1);
+      // console.log(useless, 'useless');  // undefined
       // 拖拽开始时，向 cardList 数据源中插入一个占位的元素，如果占位元素已经存在，不再重复插入
       if (!useless) {
         changeCardList([{ bg: "aqua", category: '放这里', id: -1 }, ...cardList]);
       }
+      // console.log(box, 'box');  // {bg: "pink", category: "Peach", type: "card"}...
       return box;
     },
     end(_: unknown, monitor: DragSourceMonitor) {
       const uselessIndex = cardList.findIndex((item: IListData) => item.id === -1);
+
+      // console.log(uselessIndex, 'uselessIndex');  // 选中card在容器中的索引
+      // console.log({ ...monitor.getItem() }, 'monitor'); // {bg: "purple", category: "Grape", type: "card"}
 
       /**
        * 拖拽结束时，判断是否将拖拽元素放入了目标接收组件中
@@ -56,6 +61,8 @@ const Box: React.FC<IListData & IListProps> = ({ bg, category, cardList, changeC
     },
 
   });
+
+  // console.log(drag, 'drag'); // useDrag 获取的事件函数
   return (
     <div ref={drag} style={style}>{category}</div>
   )
