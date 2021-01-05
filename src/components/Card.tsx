@@ -9,7 +9,7 @@ import { DragSourceMonitor, DropTargetMonitor, useDrag, useDrop } from 'react-dn
 import ItemTypes from '../ItemTypes';
 import IListData from '../interface/ListData';
 
-import OrderListSvg from '../assets/order-list.png';
+// import OrderListSvg from '../assets/order-list.png';
 
 const svgStyle: React.CSSProperties = {
     position: 'absolute',
@@ -113,7 +113,7 @@ const Card: React.FC<IListData & IProps> = ({ bg, category, index, moveCard, id 
 
     return (
         <div ref={ref} style={style}>
-            { id !== -1 && drag && drag(<img alt="" src={OrderListSvg} style={svgStyle} />) }
+            { id !== -1 && drag && drag(<img alt="" src="" style={svgStyle} />)}
             {category}
         </div>
     );

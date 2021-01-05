@@ -1,14 +1,12 @@
+
 import React from 'react';
-import './App.less';
+import Container from './components/Container';
+import './App.css';
 
-interface IProps {
-  children: any;
-}
-
-const App: React.FC<IProps> = ({ children }) => {
+const App: React.FC = () => {
   return (
     <div className="App">
-      {children}
+      <Container />
     </div>
   );
 }
