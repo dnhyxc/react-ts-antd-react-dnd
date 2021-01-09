@@ -35,6 +35,8 @@ const List: React.FC<IListProps> = ({ cardList, changeCardList }) => {
     /**
      * 1、如果此时拖拽的组件是 Box 组件，则 dragIndex 为 undefined，则此时修改，则此时修改 cardList 中的占位元素的位置即可
      * 2、如果此时拖拽的组件是 Card 组件，则 dragIndex 不为 undefined，此时替换 dragIndex 和 hoverIndex 位置的元素即可
+     * 
+     * 说明：dragIndex 为拖动元素的索引，hoverIndex 为元素目标索引，即目标元素拖放到当前索引
      */
     if (dragIndex === undefined) {
       const lessIndex = cardList.findIndex((item: IListData) => item.id === -1);
@@ -47,13 +49,12 @@ const List: React.FC<IListProps> = ({ cardList, changeCardList }) => {
         $splice: [[dragIndex, 1], [hoverIndex, 0, dragCard]],
       }));
     }
-    // eslint-disable-next-line
-  }, [cardList])
+  }, [cardList, changeCardList]);
 
   return (
     <div style={style} ref={drop}>
       {
-        cardList.length <= 0 ? <div style={{ lineHeight: '60px' }}>请放入水果</div>
+        cardList.length <= 0 ? <div style={{ lineHeight: '60px' }}>push some</div>
           : cardList.map((item: IListData, index: number) => <Card index={index} key={item.id} moveCard={moveCard} {...item} />)
       }
     </div>
