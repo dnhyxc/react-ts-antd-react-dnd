@@ -1,0 +1,53 @@
+.menu {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(244, 244, 244);
+
+  .header {
+    width: 100%;
+    height: 180px;
+
+    .logo {
+      padding-top: 30px;
+      width: 75px;
+      height: auto;
+    }
+
+    .title {
+      height: 80px;
+      line-height: 80px;
+      font-size: 30px;
+      text-align: center;
+      color: deepskyblue;
+      text-shadow: 2px 2px 0 skyblue;
+    }
+  }
+
+  .menuInfo {
+    flex: 1;
+    border: 1px solid pink;
+    padding: 0 20px;
+
+    .itemList {
+      border: 1px solid red;
+      text-align: center;
+
+      .item-title {
+        text-align: left;
+        width: 100%;
+        height: 50px;
+        line-height: 50px;
+        border: 1px solid #ccc;
+      }
+
+      .item {
+        width: 100%;
+        height: 50px;
+        line-height: 50px;
+        border: 1px solid #ccc;
+      }
+    }
+  }
+}
