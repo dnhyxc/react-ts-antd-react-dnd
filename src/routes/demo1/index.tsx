@@ -1,11 +1,23 @@
 import React from 'react';
-import { Input, Button } from 'antd';
+import { Input } from 'antd';
+import config from '../../config/input';
+import './index.css';
 
 const Demo1: React.FC = () => {
   return (
-    <div>
-      <Input placeholder="请输入内容" />
-      <Button>demo1</Button>
+    <div className='wrapper'>
+      <div className='left'>
+        {
+          config.map(i => {
+            return (
+              <div key={i.key} className='info'>
+                <span className='text'>{i.info}</span>
+                <Input className='input' placeholder={i.placeholder} />
+              </div>
+            )
+          })
+        }
+      </div>
     </div>
   )
 };
