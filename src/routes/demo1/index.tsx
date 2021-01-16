@@ -1,6 +1,6 @@
 import React from 'react';
 import { Input } from 'antd';
-import config from '../../config/input';
+import { config } from '../../config/constants';
 import './index.css';
 
 const Demo1: React.FC = () => {
