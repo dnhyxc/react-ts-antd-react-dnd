@@ -16,7 +16,7 @@ const RouterConfig: React.FC = () => {
                 );
               })
             }
-            <Redirect to="/demo1" />
+            <Redirect to="/app/home" />
           </Switch>
         </App>
       </Router>
