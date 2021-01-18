@@ -1,6 +1,6 @@
 const menuList = [
   {
-    title: '我的媒资',
+    title: 'RESOURCE',
     key: 'media',
     path: '',
     type: 'menu',
@@ -9,79 +9,65 @@ const menuList = [
         key: 'home',
         path: '/app/home',
         power: true,
-        title: '首页',
+        title: 'HOME',
         type: 'function'
       },
       {
-        key: 'self',
-        path: '/app/self',
+        key: 'baseJs',
+        path: '/app/basejs',
         power: true,
-        title: '个人库',
-        type: 'function'
-      },
-      {
-        key: 'auth',
-        path: '/app/auth',
-        power: true,
-        title: '权限配置',
+        title: 'BASEJS',
         type: 'function'
       },
     ]
   },
   {
-    title: '我的审批',
+    title: 'FRAME',
     key: 'apply',
     path: '',
     type: 'menu',
     children: [
       {
-        key: 'apply',
-        path: '/app/apply',
+        key: 'react',
+        path: '/app/react',
         power: true,
-        title: '我的申请',
+        title: 'REACT',
         type: 'function'
       },
       {
-        key: 'approval',
-        path: '/app/approval',
+        key: 'redux',
+        path: '/app/redux',
         power: true,
-        title: '我的审批',
+        title: 'REDUX',
         type: 'function'
       },
       {
-        key: 'face',
-        path: '/app/face',
+        key: 'dva',
+        path: '/app/dvajs',
         power: true,
-        title: '人脸管理',
+        title: 'DVAJS',
+        type: 'function'
+      },
+      {
+        key: 'webpack',
+        path: '/app/webpack',
+        power: true,
+        title: 'WEBPACK',
         type: 'function'
       },
     ]
   },
   {
-    title: '高级配置',
+    title: 'ADVANCED',
     key: 'advanced',
     path: '',
     type: 'menu',
     children: [
       {
-        key: 'rich',
-        path: '/app/rich',
+        key: 'auth',
+        path: '/app/auth',
         power: true,
-        title: '文稿',
-        type: 'function'
-      },
-      {
-        key: 'share',
-        path: '/app/share',
-        power: true,
-        title: '共享',
-        type: 'function'
-      },
-      {
-        key: 'user',
-        path: '/app/user',
-        power: true,
-        title: '用户配置',
+        title: 'AUTH',
         type: 'function'
       },
     ]

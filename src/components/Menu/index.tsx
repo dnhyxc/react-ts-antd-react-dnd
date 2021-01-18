@@ -1,7 +1,6 @@
 import React, { useState, useRef } from 'react';
 import { NavLink } from 'react-router-dom';
-// import icon from '../../assets/image/logo.png';
-import { DownOutlined, UpOutlined } from '@ant-design/icons';
+import { CaretDownOutlined, CaretUpOutlined } from '@ant-design/icons';
 import menuList from '../../config/menu';
 import './index.less';
 
@@ -18,7 +17,6 @@ const MMenu: React.FC = () => {
 
   const onTitleClick = (key: string) => {
     setIsUp(!isUp);
-    console.log(key);
     switch (key) {
       case 'media':
         setIsMediaUp(!isMediaUp);
@@ -36,27 +34,22 @@ const MMenu: React.FC = () => {
       default:
         break;
     }
-    // menuRef.current.toggle('close');
-    console.log(menuRef.current.className);
-    console.log(menuRef.current);
   };
 
   return (
     <div className='menu'>
-      {/* <div className='header'>
-        <img className='logo' src={icon} alt="" />
-        <div className='title'>融媒体</div>
-      </div> */}
+      <div className='menuHeader'>
+        <div className='title'>FRONTEND</div>
+      </div>
       {
         menuList.map(i => {
           return (
             <div key={i.key} className='menuList'>
-              <div className='menuTitle' >
+              <div className='menuTitle'>
                 <div className='title' onClick={() => onTitleClick(i.key)}>
                   {i.title}
-                  {(isMediaUp && i.key === mediaKey) || (isApplyUp && i.key === applyKey) || (isAdvancedUp && i.key === advancedKey) ? <UpOutlined /> : <DownOutlined className='icon' />}
+                  {(isMediaUp && i.key === mediaKey) || (isApplyUp && i.key === applyKey) || (isAdvancedUp && i.key === advancedKey) ? <CaretDownOutlined className='Icon' /> : <CaretUpOutlined className='Icon' />}
                 </div>
-                {/* <div className={'itemList'} ref={menuRef}> */}
                 <div className={(isMediaUp && i.key === mediaKey) || (isApplyUp && i.key === applyKey) || (isAdvancedUp && i.key === advancedKey) ? 'close' : 'itemList'} ref={menuRef}>
                   {i.children.map(i => {
                     return (

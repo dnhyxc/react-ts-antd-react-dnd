@@ -1,9 +1,10 @@
 import React from 'react';
 import { Input } from 'antd';
 import { config } from '../../config/constants';
-import './index.css';
+import Header from '../../components/Header';
+import './index.less';
 
-const Demo1: React.FC = () => {
+const Redux: React.FC = () => {
   return (
     <div className='wrapper'>
       <div className='left'>
@@ -18,8 +19,13 @@ const Demo1: React.FC = () => {
           })
         }
       </div>
+      <div className='right'>
+        <Header>
+          <div>REDUX</div>
+        </Header>
+      </div>
     </div>
   )
 };
 
-export default Demo1;
+export default Redux;

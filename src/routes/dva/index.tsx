@@ -3,7 +3,7 @@ import { Button, Input } from 'antd';
 
 const { TextArea } = Input;
 
-const Demo3: React.FC = () => {
+const Dva: React.FC = () => {
   return (
     <div>
       <TextArea />
@@ -12,4 +12,4 @@ const Demo3: React.FC = () => {
   )
 }
 
-export default Demo3;
+export default Dva;
