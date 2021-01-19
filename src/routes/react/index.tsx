@@ -7,6 +7,9 @@ const UseReact: React.FC = () => {
   return (
     <div className='reactWrapper'>
       <MTree data={reactTreeData} />
+      <div className='right'>
+        reactcontent
+      </div>
     </div>
   )
 };
