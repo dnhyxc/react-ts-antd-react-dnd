@@ -18,7 +18,7 @@ const RoutesConfig = [
     component: Routes.BaseJs,
   },
   {
-    key: 'BASEJS',
+    key: 'dvajs',
     path: '/app/dvajs',
     component: Routes.DvaJS,
   },

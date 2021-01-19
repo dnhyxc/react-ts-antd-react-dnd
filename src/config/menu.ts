@@ -42,7 +42,7 @@ const menuList = [
         type: 'function'
       },
       {
-        key: 'dva',
+        key: 'dvajs',
         path: '/app/dvajs',
         power: true,
         title: 'DVAJS',
