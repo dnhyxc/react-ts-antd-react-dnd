@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import RouterConfig from '../src/routes/index';
+import RouterConfig from './routes/router';
 import './index.less';
 
 ReactDOM.render(

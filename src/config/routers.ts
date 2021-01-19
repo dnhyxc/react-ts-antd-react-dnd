@@ -1,53 +1,47 @@
-import Redux from '../routes/redux';
-import React from '../routes/react';
-import Dva from '../routes/dva';
-import BaseJs from '../routes/baseJs';
-import Webpack from '../routes/webpack';
-import Auth from '../routes/auth';
-import Home from '../routes/home';
+import * as Routes from '../routes/index';
 
 const RoutesConfig = [
   {
     key: 'home',
     path: '/app/home',
-    component: Home,
+    component: Routes.Home,
   },
   {
     key: 'react',
     path: '/app/react',
-    component: React,
+    component: Routes.React,
     exact: true,
   },
   {
     key: 'baseJs',
     path: '/app/basejs',
-    component: BaseJs,
+    component: Routes.BaseJs,
   },
   {
     key: 'BASEJS',
     path: '/app/dvajs',
-    component: Dva,
+    component: Routes.DvaJS,
   },
   {
     key: 'redux',
     path: '/app/redux',
-    component: Redux,
+    component: Routes.Redux,
   },
   {
     key: 'dva',
     path: '/app/dva',
-    component: React,
+    component: Routes.React,
     exact: true,
   },
   {
     key: 'webpack',
     path: '/app/webpack',
-    component: Webpack,
+    component: Routes.Webpack,
   },
   {
     key: 'auth',
     path: '/app/auth',
-    component: Auth,
+    component: Routes.Auth,
     exact: true,
   },
 ];
