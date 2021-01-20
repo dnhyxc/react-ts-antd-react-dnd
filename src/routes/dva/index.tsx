@@ -3,13 +3,13 @@ import { Button, Input } from 'antd';
 
 const { TextArea } = Input;
 
-const Demo3: React.FC = () => {
+const DvaJS: React.FC = () => {
   return (
     <div>
       <TextArea />
-      <Button>Demo3</Button>
+      <Button>DvaJS</Button>
     </div>
   )
 }
 
-export default Demo3;
+export default DvaJS;

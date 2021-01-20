@@ -1,6 +1,6 @@
 import { InputParams } from './types';
 
-const config: InputParams[] = [
+export const config: InputParams[] = [
   {
     key: 'name',
     info: '用户名',
@@ -28,4 +28,3 @@ const config: InputParams[] = [
   },
 ]
 
-export default config;

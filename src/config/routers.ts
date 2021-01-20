@@ -1,23 +1,54 @@
-import Demo1 from '../routes/demo1';
-import Demo2 from '../routes/demo2';
-import Demo3 from '../routes/demo3';
+import * as Routes from '../routes/index';
+import { RouteTypes } from './types';
 
-const RoutesConfig = [
+const RoutesConfig: RouteTypes[] = [
   {
-    key: 'demo1',
-    path: '/demo1',
-    component: Demo1,
-  },
-  {
-    key: 'demo2',
-    path: '/demo2',
-    component: Demo2,
+    key: 'home',
+    path: '/app/home',
+    component: Routes.Home,
     exact: true,
   },
   {
-    key: 'demo3',
-    path: '/demo2/demo3',
-    component: Demo3,
+    key: 'react',
+    path: '/app/react',
+    component: Routes.React,
+    exact: true,
+  },
+  {
+    key: 'baseJs',
+    path: '/app/basejs',
+    component: Routes.BaseJs,
+    exact: true,
+  },
+  {
+    key: 'dvajs',
+    path: '/app/dvajs',
+    component: Routes.DvaJS,
+    exact: true,
+  },
+  {
+    key: 'redux',
+    path: '/app/redux',
+    component: Routes.Redux,
+    exact: true,
+  },
+  {
+    key: 'dva',
+    path: '/app/dva',
+    component: Routes.React,
+    exact: true,
+  },
+  {
+    key: 'webpack',
+    path: '/app/webpack',
+    component: Routes.Webpack,
+    exact: true,
+  },
+  {
+    key: 'auth',
+    path: '/app/auth',
+    component: Routes.Auth,
+    exact: true,
   },
 ];
 

@@ -2,13 +2,8 @@ import React, { useState } from 'react';
 import { withRouter } from 'react-router';
 import { Layout } from 'antd';
 import MMenu from '../../components/Menu'
-// import {
-//   VideoCameraOutlined,
-//   UploadOutlined,
-//   UserOutlined,
-// } from '@ant-design/icons';
 
-import styles from './index.less';
+import './index.less';
 
 const { Sider, Content } = Layout;
 
@@ -35,14 +30,8 @@ const MainLayout: React.FC<ILayoutProps> = ({ children }) => {
       >
         <MMenu />
       </Sider>
-      <Layout style={{ backgroundColor: '#ffffff' }}>
-        {/* <Header taskDot={{
-          redDot: 0,
-          warnExtend: true,
-          uploading: true,
-        }}
-        /> */}
-        <Content className={styles.content}>
+      <Layout className='layoutContent'>
+        <Content className='content'>
           {children}
         </Content>
       </Layout>
