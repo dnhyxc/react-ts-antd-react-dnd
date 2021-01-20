@@ -67,7 +67,7 @@
   box-sizing: border-box;
   padding: 0px 15px;
   background-image: linear-gradient(to left, #c8e4f0, #bad0f3);
-  box-shadow: 3px 0px 8px rgb(221, 221, 221);
+  // box-shadow: 3px 0px 8px rgb(221, 221, 221);
   width: 220px;
   height: 100%;
   transition: all 0.2s;
@@ -89,8 +89,10 @@
     width: 8px;
     height: 100px;
     line-height: 100px;
-    background-color: #6e8df3;
-    box-shadow: -1px 0px 5px 2px #5378f0;
+    // background-color: #6e8df3;
+    background-image: linear-gradient(to left, #c8e4f0, #bad0f3);
+    border-radius: 3px;
+    box-shadow: -1px 0px 5px 1px #89a3f8;
     cursor: pointer;
     color: #2455f5;
     transition: all 0.2s;
@@ -110,10 +112,9 @@
   display: flex;
   justify-content: space-between;
   box-sizing: border-box;
-  background-image: linear-gradient(to left, #c8e4f0, #bad0f3);
-  box-shadow: 3px 0px 8px rgb(221, 221, 221);
   width: 0px;
   transition: all 0.2s;
+  z-index: 999;
 
   .treeList {
     width: 0px;
@@ -132,12 +133,14 @@
     width: 8px;
     height: 100px;
     line-height: 100px;
-    background-color: #6e8df3;
-    box-shadow: -1px 0px 5px 2px #5378f0;
+    background-image: linear-gradient(to bottom, #c8e4f0, #bad0f3);
+    border-radius: 3px;
+    box-shadow: -1px 0px 5px 2px #89a3f8;
     cursor: pointer;
     color: #2455f5;
     transform: translate(100%, -60%);
     transition: all 0.2s;
+    z-index: 999;
 
     &:hover {
       width: 30px;
