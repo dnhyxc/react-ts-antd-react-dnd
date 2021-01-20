@@ -1,12 +1,12 @@
 import React from 'react';
-import Header from '../../components/Header'
+import Header from '../../components/Header';
 import './index.less';
 
 
 const Home: React.FC = () => {
   return (
     <div className='contentWrapper'>
-      <Header>
+      <Header title='HOME'>
         <div>
           header
         </div>
